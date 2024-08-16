@@ -1,7 +1,13 @@
+import { Metadata } from "next";
 import HomePage from "./Home";
 
-type Props = {};
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Home page description",
+  keywords: ["Home", "Next.JS", "Tailwind CSS"],
+};
 
-export default function Home({}: Props) {
+// tsrfc
+export default function Home() {
   return <HomePage />;
 }

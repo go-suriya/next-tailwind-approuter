@@ -1,7 +1,13 @@
 import AboutPage from "./About";
 
-type Props = {};
+import { Metadata } from "next";
 
-export default function About({}: Props) {
+export const metadata: Metadata = {
+  title: "About",
+  description: "About page description",
+  keywords: ["About", "Next.JS", "Tailwind CSS"],
+};
+
+export default function About() {
   return <AboutPage />;
 }

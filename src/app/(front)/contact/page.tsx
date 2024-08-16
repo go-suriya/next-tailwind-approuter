@@ -1,7 +1,13 @@
 import ContactPage from "./Contact";
 
-type Props = {};
+import { Metadata } from "next";
 
-export default function Contact({}: Props) {
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact page description",
+  keywords: ["Contact", "Next.JS", "Tailwind CSS"],
+};
+
+export default function page() {
   return <ContactPage />;
 }

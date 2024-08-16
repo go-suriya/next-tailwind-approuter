@@ -1,7 +1,14 @@
 import BlogPage from './Blog'
 
-type Props = {}
+import { Metadata } from 'next'
 
-export default function Blog({}: Props) {
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Blog page description',
+  keywords: ['Blog', 'Next.JS', 'Tailwind CSS'],
+}
+
+
+export default function Blog() {
   return <BlogPage />
 }
